@@ -106,3 +106,6 @@ def run():
     finally:
         # Ensure the browser is closed even if an error occurs
         driver.quit()
+        
+if __name__ == "__main__":
+    run()
