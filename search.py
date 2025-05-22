@@ -45,6 +45,7 @@ def show_statistics(vakances):
             except:
                 continue
 
+    # Deadline statistics
     if deadlines:
         min_date = min(deadlines).strftime("%d.%m.%Y")
         max_date = max(deadlines).strftime("%d.%m.%Y")
@@ -64,10 +65,12 @@ def validate_date(input_str):
         print("\nNepareizs datuma formāts. Pareizais formāts: dd-mm-yyyy (piemēram: 15-01-2023)")
         return None
 
+# Main logic for filtering internships from vakances.json
 def run():
     with open("vakances.json", "r", encoding="utf-8") as f:
         vakances = json.load(f)
 
+    # Collect user filters
     interest = input("Ievadi meklējamo vārdu (piemēram: python): ").lower()
     place = input("Ievadi meklējamo vietu (piemēram: Rīga): ").lower()
     deadline_till = input("Ievadi meklējamo termiņu (piemēram: 15-01-2023): ")
@@ -78,11 +81,12 @@ def run():
     results = []
 
     for vakance in vakances:
-        title = normalize(vakance.get("Title", ""))  # Normalize title
-        location = normalize(vakance.get("Location", ""))  # Normalize location
+         # Normalize all searchable fields
+        title = normalize(vakance.get("Title", ""))
+        location = normalize(vakance.get("Location", ""))
         deadline = vakance.get("Deadline", "").lower()
-        company = normalize(vakance.get("Company", ""))  # Normalize company
-        requirements = normalize(vakance.get("Requirements", ""))  # Normalize requirements
+        company = normalize(vakance.get("Company", ""))
+        requirements = normalize(vakance.get("Requirements", ""))
 
         if interest:
             normalized_interes = normalize(interest)
