@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 import time, re
 
 def run():
-    atslegvards = input("Ievadi atslēgvārdu (piemēram: Python): ")
+    atslegvards = input("Ievadi vienu vai vairākus atslēgvārdus (atdalītus ar atstarpēm, piemēram: Python SQL): ")
 
     service = Service()
     option = webdriver.ChromeOptions()
