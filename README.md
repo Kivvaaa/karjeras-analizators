@@ -1,4 +1,4 @@
-# 🧠 Prakses un algu analizators: Python projekts
+# 🧠 Python Profesiju GPS: Prakse un Algas
 
 ## 🎯 Projekta uzdevums
 
