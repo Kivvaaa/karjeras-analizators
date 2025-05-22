@@ -76,7 +76,7 @@ Lietotājs tiek aicināts palaist `main.py` failu, kurā notiek interaktīva saz
    Lietotājs ievada interesējošu atslēgvārdu (piemēram, “programmēšana”), pilsētu, uzņēmuma nosaukumu vai termiņu. Programma atrod un attēlo visas vakances, kas atbilst šiem kritērijiem. Papildus iespējams apskatīt statistiku par visām saglabātajām praksēm: populārākās pilsētas, uzņēmumi, termiņi u.c.
 
 3. **Analizēt algu informāciju (no cv.lv)**  
-   Lietotājs ievada vienu atslēgvārdu (piemēram, “Python”, “SQL”), un programma izmanto `Selenium`, lai meklētu atbilstošās IT vakances vietnē [cv.lv](https://www.cv.lv), izgūst norādītās algas un aprēķina statistiku — vidējo, minimālo un maksimālo mēnešalgu.
+   Lietotājs ievada **vienu vai vairākus atslēgvārdus** (piemēram, “Python”, “SQL” vienā rindā, atdalot ar atstarpēm), un programma izmanto `Selenium`, lai meklētu atbilstošās IT vakances vietnē [cv.lv](https://www.cv.lv), izgūst norādītās algas un aprēķina statistiku — vidējo, minimālo un maksimālo mēnešalgu.
 
 ---
 
